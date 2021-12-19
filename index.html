@@ -7,23 +7,24 @@
   <link rel="stylesheet" href="assets/styles.css" />
 
   <script src="https://unpkg.com/vue@next"></script>
-  
+
   <title>Weight Tracking App</title>
 </head>
-<body>
+  <body>
 
-  <div id="app">
-    <div class="cart">Cart ({{ cart.length }})</div>
-    <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
-  </div>
+    <div id="app">
+      <weight-infos></weight-infos>
+    </div>
 
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 
-  <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/WeightRecord.js"></script>
+    <script src="./components/WeightInfos.js"></script>
+    <script src="./components/WeightInfo.js"></script>
 
-  <script>
-    const mountedApp = app.mount('#app')
-  </script>
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
 
-</body>
+  </body>
 </html>
